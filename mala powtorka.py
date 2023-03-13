@@ -19,3 +19,10 @@ for klucz,wartość in dict.items():
 stores= ['Chleb','Pączek','Bułki','Marchew','Seler','Rukola']
 print(len(stores))
 print('W sumie kupuje 6 produktow')
+
+for i in range(0,100):
+        if i & 5 == 0:
+            print(i)
+            
+for i in range(0,100):
+        print(i,i**3)
