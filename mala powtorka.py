@@ -1,17 +1,13 @@
 name = "Lista zakupow"
 print(name)
-dict= {
-        "Piekarnia":["Chleb","Paczek","Bulki"],
-        "Warzywniak":["Marchew","Seler","Rukola"]
+dict= {"Piekarnia":["Chleb","Paczek","Bulki"],
+       "Warzywniak":["Marchew","Seler","Rukola"]
       }
-for klucz,wartosc in dict.items():
-    print("Ide do {},kupuje tam rzeczy {}".format(klucz, wartosc))
-    
-stores= ['Chleb','Pączek','Bułki','Marchew','Seler','Rukola']
-
 counter = 0
-for store in stores:
-        counter +=1
+for klucz,wartosc in dict.items():
+    counter +=len(wartosc)
+    print("Ide do {},kupuje tam rzeczy {}".format(klucz, wartosc))
+print(len(wartosc))
 print(counter)
 print('W sumie kupuje 6 produktów')
 
